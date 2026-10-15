@@ -63,6 +63,9 @@
     <li>Your email address, if you sign up or log in with email and password</li>
     <li>Your check-in history — which business you tapped in at, and when</li>
     <li>Your loyalty progress, rewards, and badges at each business you've visited</li>
+    <li>If you use Sign in with Apple: your name and an email address from Apple (which may be a private relay address Apple creates for you)</li>
+    <li>A device token, only if you turn on push notifications in the app (they are off by default, and you can turn them off in your Profile at any time)</li>
+    <li>Crash reports and basic technical information about your device and the app version, linked to an anonymous account ID, so we can find and fix problems</li>
   </ul>
   <p><strong>If you're a business owner:</strong></p>
   <ul>
@@ -72,7 +75,7 @@
     <li>Billing information, handled directly by our payment processor, Stripe — we never see or store your full card details ourselves</li>
     <li>If you've ordered a Portal (our physical NFC check-in device), the shipping address you provided for delivery or pickup</li>
   </ul>
-  <p><strong>What we don't collect:</strong> we don't run any advertising trackers or sell any data to third parties. We don't use analytics tools that build an advertising profile of you. The only communications we send are transactional — account confirmations, waitlist updates, and notifications relevant to your account (like a reward you've earned).</p>
+  <p><strong>What we don't do:</strong> we don't run advertising trackers, we don't sell your data, and we don't use your information to build an advertising profile of you. We use crash reporting only to keep the app working. The only messages we send are about your account, rewards you have earned, and offers from businesses you have checked in at, and push notifications are only sent if you turn them on.</p>
 
   <h2>How we use this information</h2>
   <ul>
@@ -86,23 +89,29 @@
   <h2>Who can see your information</h2>
   <ul>
     <li><strong>Customers</strong> can only ever see their own check-in history, rewards, and loyalty progress — never another customer's.</li>
-    <li><strong>Business owners</strong> can see check-in and reward activity for customers at their own business (so they can run their loyalty program), but never your contact details beyond what's needed to identify your account, and never your activity at other businesses.</li>
+    <li><strong>Business owners</strong> can see activity for customers at their own business, so they can run their loyalty program: your first name and last initial, your visit count and last visit date, and the rewards you have earned and claimed there. They never see your contact details beyond what's needed to identify your account, and never your activity at other businesses.</li>
+    <li><strong>The people who run Regulars</strong> can see account and activity information, including names, contact details and visit history, in an internal admin tool, so we can provide support and keep the service running.</li>
     <li>We never sell, rent, or share your personal information with third parties for their own marketing purposes.</li>
-    <li>We use a small number of service providers to run Regulars — Supabase (our database and authentication provider), Stripe (payments), and Resend (transactional email delivery). These providers only ever process data on our behalf, under their own privacy and security obligations, and never use it for their own purposes.</li>
+    <li>We use a small number of service providers to run Regulars — Supabase (our database and sign-in provider), Google Firebase (crash reporting and push notifications), Apple (Sign in with Apple), Stripe (payments for businesses), and Resend (email delivery). These providers process data on our behalf, under their own privacy and security obligations, and may store or process it outside Australia, including in the United States. We take reasonable steps to make sure they handle it in line with the Australian Privacy Principles.</li>
   </ul>
 
   <h2>Your rights</h2>
   <ul>
     <li>You can view your own data at any time within the app.</li>
     <li>You can delete your account at any time from your Profile — this permanently removes your account and personal information from our systems.</li>
+    <li>You can turn push notifications on or off at any time in your Profile.</li>
     <li>You can contact us at <a href="mailto:Info@regularsapp.com.au">Info@regularsapp.com.au</a> to ask what information we hold about you, correct it, or request its deletion outside the app.</li>
+    <li>If you're not happy with how we've handled your information, please contact us first so we can try to fix it. You can also complain to the Office of the Australian Information Commissioner at <a href="https://www.oaic.gov.au">oaic.gov.au</a>.</li>
   </ul>
+
+  <h2>How long we keep your information</h2>
+  <p>We keep your information for as long as your account exists. When you delete your account, we remove your account and the personal information linked to it. We may keep limited records, such as billing records for business subscriptions, for as long as the law requires.</p>
 
   <h2>Data security</h2>
   <p>Your information is stored with Supabase, our database provider, using industry-standard security practices including encryption in transit and strict access controls — a customer's loyalty data, for example, can only ever be read by that customer's own account or the business they visited, enforced at the database level, not just in the app itself.</p>
 
   <h2>Children's privacy</h2>
-  <p>Regulars is not directed at children, and we don't knowingly collect information from anyone under 13.</p>
+  <p>Regulars is not directed at children, and we don't knowingly collect information from anyone under 13. If you believe a child has given us their information, contact us and we will delete it.</p>
 
   <h2>Changes to this policy</h2>
   <p>If we make material changes to this policy, we'll update the date at the top and, where appropriate, let you know in the app.</p>
@@ -110,9 +119,6 @@
   <h2>Contact us</h2>
   <p>Regulars is based in Australia. For any privacy questions, requests, or concerns, email us at <a href="mailto:Info@regularsapp.com.au">Info@regularsapp.com.au</a>.</p>
 
-  <div class="card">
-    Note for whoever's publishing this: fill in the "Last updated" date, and have this reviewed before it goes live — it's grounded in exactly what the app actually collects as of today, but you're the one accountable for it being accurate and compliant with the Australian Privacy Act (APPs), not an AI assistant.
-  </div>
 </div>
 </body>
 </html>
